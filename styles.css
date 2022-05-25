@@ -1,0 +1,34 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  position: relative;
+}
+
+body {
+  background-color: #252934;
+  transition: background-color 1.9s ease;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+
+section{
+    height: 1000%;
+}
+
+section .container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section .container h1{
+  font-size: 50px;
+  font-weight: 900;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+section .container button{
+    
+}
