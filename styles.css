@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: #252934;
+  background-color: #252934 ;
   transition: background-color 1.9s ease;
   min-height: 100vh;
   overflow-x: hidden;
@@ -25,7 +25,17 @@ section .container h1{
   font-weight: 900;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
-  animation: 3s anim-lineUp ease-out ;
+  /*animation: 3s anim-lineUp ease-out ;*/
+   text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 10px #fff,
+      0 0 10px #0fa,
+      0 0 10px #0fa,
+      0 0 10px #0fa,
+      0 0 10px #0fa,
+      0 0 151px #0fa;
+  animation: flicker 1.5s infinite alternate;
 }
 @keyframes anim-lineUp {
   0% {
@@ -182,6 +192,7 @@ section button i{
 .header
 {
     position: sticky;
+    position: -webkit-sticky;
     font-family: 'Montserrat', sans-serif;
     top: 0;
     left: 0;
@@ -225,20 +236,10 @@ section button i{
 /* END NAV BAR */
 
 
-/* panel styles */
-.panel {
-  /* min height incase content is higher than window height */
-  min-height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  /* outline: 10px solid hotpink; */
-  /* turn above on to see the edge of panels */
-}
 
 /* colours */
 .color-violet {
-  background-color: #fc4839;
+  background-color: #4e6ab8;
 }
 .color-indigo {
   background-color: #8900F2;
@@ -252,6 +253,7 @@ section button i{
 .color-yellow {
   background-color: #BC00DD;
 }
+/* colours end */
 
 #particles-js{
     height: 1000%;
@@ -277,70 +279,72 @@ section button i{
   opacity: 0.5;
 }
 
-.card {
- width: 190px;
- height: 254px;
- --border-radius: 15px;
- --border-width: 4px;
- appearance: none;
- position: absolute;
- padding: 1em 2em;
- border: 0;
- background: ;
- font-size: 18px;
- font-weight: 500;
- color: #fff;
- z-index: 2;
- border-radius: 15px;
+/* panel styles */
+.section2 {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+  align-items: center;
+
+  /* outline: 10px solid hotpink; */
+  /* turn above on to see the edge of panels */
 }
 
-.card::after {
- --m-i: linear-gradient(#000, #000);
- --m-o: content-box, padding-box;
- content: "";
- position: absolute;
- left: 0;
- top: 0;
- width: 100%;
- height: 100%;
- padding: var(--border-width);
- border-radius: var(--border-radius);
- background-image: conic-gradient(
-		#488cfb,
-		#29dbbc,
-		#ddf505,
-		#ff9f0e,
-		#e440bb,
-		#655adc,
-		#488cfb
-	);
- -webkit-mask-image: var(--m-i), var(--m-i);
- mask-image: var(--m-i), var(--m-i);
- -webkit-mask-origin: var(--m-o);
- mask-origin: var(--m-o);
- -webkit-mask-clip: var(--m-o);
- mask-composite: exclude;
- -webkit-mask-composite: destination-out;
- filter: hue-rotate(0);
- animation: rotate-hue linear 500ms infinite;
- animation-play-state: paused;
+
+.section2 h1{
+    position: absolute;
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    transform: translate(-50%, -50%);
+    letter-spacing: 15px;
+    left: 50%;
+    color: #fff;
+    
 }
 
-.card:hover::after {
- animation-play-state: running;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
 }
 
-@keyframes rotate-hue {
- to {
-  filter: hue-rotate(1turn);
- }
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
 }
 
-.card,
-.card::after {
- box-sizing: border-box;
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
 }
 
-.card:active {
- --border-width: 5px;
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
 }
+
+.flex-items:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+

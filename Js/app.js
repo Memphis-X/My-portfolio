@@ -258,6 +258,7 @@ jQuery(function($){
   var $window = $(window),
       $body = $('body'),
       $panel = $('.panel');
+      $section2 = $('.section2');
 
   // Change 33% earlier than scroll position so colour is there when you arrive.
   var scroll = $window.scrollTop() + ($window.height() / 1.5);
