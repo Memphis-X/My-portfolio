@@ -9,10 +9,16 @@
     <script src="https://kit.fontawesome.com/b70641ac82.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--link rel="shortcut icon" href="images/fav-icon.png"-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
     <title>Jordan</title>
 </head>
 <div id="scroll-progress"></div>
@@ -21,21 +27,17 @@
     <div class="panel" id="particles-js" data-color="white">
         <div class="container">
             <h1>Hey there, I'm Jordan Bernard...<br>....A front-end web developer.</h1>
-            <button>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> Projects <i class="fa-solid fa-arrow-down"></i>
-            </button>
+        </div>
+        <div id="section05" class="demo">
+            <a href="#particle-js"><span></span>Scroll</a>
         </div>
     </div>
 </section>
 
 
-
 <!--Welcome page End-->
 <div class="panel" id="particle-js" data-color="violet">
-    <header>
+    <header data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="5000">
         <a href="#" class="head">Jordan</a>
             <ul>
                 <li><a href="#" class="active">Projects</a></li>
@@ -44,50 +46,33 @@
                 <li><a href="#" class="active">Contact</a></li>
             </ul>
     </header>
-
-<div class="row">
-    <div class="column">
-        <div class="card">
-            <span class="inner-card-backface"> <!-- back of the card -->
-                <span class="image">
-                    <span class="unflip">Unflip</span>
-                </span>
-            </span>
-            <span class="inner-card"> <!-- front of the card -->
-                <span class="flip">Flip</span> 
-                <span class="glare"></span> <!-- to store the glare effect -->
-            </span>
-        </div>
+    <div class="projects" data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <h1>PROJECTS</h1>
     </div>
-    <div class="column">
-        <div class="card">
-             <span class="inner-card-backface"> <!-- back of the card -->
-                <span class="image">
-                    <span class="unflip">Unflip</span>
-                </span>
-            </span>
-            <span class="inner-card"> <!-- front of the card -->
-                <span class="flip">Flip</span> 
-                <span class="glare"></span> <!-- to store the glare effect -->
-            </span>
-        </div>
+    <div class="container2">
+            <div class="card" data-aos="fade-right" data-aos-duration='1000' data-tilt>
+                <div class="card-image">
+                    <img src="Group 9.png" alt="">
+                </div>
+                <div class="card-ip">
+                    <img src="iP13.png" alt="">
+                </div>
+            </div>
+            <div class="ckeinfo" data-aos="fade-up" data-aos-duration='2000' >
+                <h2>Coca-Cola</h2>
+                <p>A website for a local coke store Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. 
+                Integer posuere massa id turpis tempor, at volutpat velit efficitur. <br>Etiam dictum vestibulum 
+                finibus. Nam in felis ex. Ut purus sapien
+                A website for a local coke store Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.<br>
+                Integer posuere massa id turpis tempor, at volutpat velit efficitur. Etiam dictum vestibulum 
+                finibus. Nam in felis ex. Ut purus sapien
+            finibus. Nam in felis ex.<br> Ut purus sapien
+                A website for a local coke store Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. </p>
+            </div>
     </div>
-    <div class="column">
-        <div class="card">
-             <span class="inner-card-backface"> <!-- back of the card -->
-                <span class="image">
-                    <span class="unflip">Unflip</span>
-                </span>
-            </span>
-            <span class="inner-card"> <!-- front of the card -->
-                <span class="flip">Flip</span> 
-                <span class="glare"></span> <!-- to store the glare effect -->
-            </span>
-        </div>
-    </div>
-    
-</div>
-
 <!--Lines-->
 
 <div class="line"></div>
@@ -98,7 +83,26 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script type="text/javascript" src="js/particles.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+function scrollWin() {
+  window.scrollBy(0, 1000);
+}
+</script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".card"), {
+		max: 25,
+		speed: 400
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".card"));
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
