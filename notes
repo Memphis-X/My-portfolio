@@ -4,29 +4,5 @@ Edmond's Portfolio
  header - margin-top: 100px;
 
 
-add navbar in section 2
+add navbar in section 2 done
 
-
-
-<div class="card blastoise">
-        <span class="inner-card-backface"> <!-- back of the card -->
-            <span class="image">
-                <span class="unflip">Unflip</span>
-            </span>
-        </span>
-        <span class="inner-card"> <!-- front of the card -->
-            <span class="flip">Flip</span> 
-            <span class="glare"></span> <!-- to store the glare effect -->
-        </span>
-    </div>
-    <div class="card blastoise">
-        <span class="inner-card-backface"> <!-- back of the card -->
-            <span class="image">
-                <span class="unflip">Unflip</span>
-            </span>
-        </span>
-        <span class="inner-card"> <!-- front of the card -->
-            <span class="flip">Flip</span> 
-            <span class="glare"></span> <!-- to store the glare effect -->
-        </span>
-    </div>

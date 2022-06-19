@@ -5,26 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/b70641ac82.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--link rel="shortcut icon" href="images/fav-icon.png"-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"> -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
     <title>Jordan</title>
 </head>
-<div id="scroll-progress"></div>
+<!-- <div id="scroll-progress"></div> -->
 <!--Welcome page-->
 <section>
-    <div class="panel" id="particles-js" data-color="white">
+    <div class="panel" id="particles-js">
         <div class="container">
             <h1>Hey there, I'm Jordan Bernard...<br>....A front-end web developer.</h1>
         </div>
@@ -35,8 +25,9 @@
 </section>
 
 
+
 <!--Welcome page End-->
-<div class="panel" id="particle-js" data-color="violet">
+
     <header data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="5000">
         <a href="#" class="head">Jordan</a>
             <ul>
@@ -45,20 +36,21 @@
                 <li><a href="#" class="active">About</a></li>
                 <li><a href="#" class="active">Contact</a></li>
             </ul>
+             <div class="projects" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <h1>PROJECTS</h1>
+            </div>
     </header>
-    <div class="projects" data-aos="fade-up" data-aos-anchor-placement="top-center">
-        <h1>PROJECTS</h1>
-    </div>
+
+
+<div class="panel" id="particle-js"></div>
     <div class="container2">
-            <div class="card" data-aos="fade-right" data-aos-duration='1000' data-tilt>
-                <div class="card-image">
-                    <img src="Group 9.png" alt="">
-                </div>
-                <div class="card-ip">
-                    <img src="iP13.png" alt="">
+            <div class="card" data-aos="fade-right" >
+                <img src="images/Group 9.png" alt="">
+                <div class="iphone">
+                    <img src="images/iP13.png" alt="">
                 </div>
             </div>
-            <div class="ckeinfo" data-aos="fade-up" data-aos-duration='2000' >
+            <div class="ckeinfo" data-aos="fade-left">
                 <h2>Coca-Cola</h2>
                 <p>A website for a local coke store Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. 
@@ -73,10 +65,44 @@
                 consectetur adipiscing elit. </p>
             </div>
     </div>
-<!--Lines-->
+</div>
 
+<div class="panel1" id="particl-js">
+    <div class="container3">
+        <div class="card1" data-aos="fade-left" >
+            <img src="images/Group 9.png" alt="">
+            <div class="iphone">
+                <img src="images/iP13.png" alt="">
+            </div>
+        </div>
+        <div class="ckeinfo1" data-aos="fade-left">
+            <h2>Coca-Cola</h2>
+            <p>A website for a local coke store Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. 
+            Integer posuere massa id turpis tempor, at volutpat velit efficitur. <br>Etiam dictum vestibulum 
+            finibus. Nam in felis ex. Ut purus sapien
+            A website for a local coke store Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.<br>
+            Integer posuere massa id turpis tempor, at volutpat velit efficitur. Etiam dictum vestibulum 
+            finibus. Nam in felis ex. Ut purus sapien
+        finibus. Nam in felis ex.<br> Ut purus sapien
+            A website for a local coke store Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!--Lines-->
 <div class="line"></div>
 <!--Lines End-->
+
 
 
 
@@ -91,14 +117,27 @@ function scrollWin() {
 </script>
 <script type="text/javascript">
 	VanillaTilt.init(document.querySelector(".card"), {
-		max: 25,
-		speed: 400
+		max: 3,
+		//speed: 800,
+       
 	});
 	
 	//It also supports NodeList
 	VanillaTilt.init(document.querySelectorAll(".card"));
 </script>
+
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".card1"), {
+		max: 3,
+		//speed: 800,
+       
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".card1"));
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./dist/kinet.min.js"></script>
 
 <script>
   AOS.init();
